@@ -15,3 +15,4 @@ res://scenes/characters/player/watering_state.gd
 res://scenes/test/test_scene_house_tilemap.tscn
 res://scenes/houses/large_house.tscn
 res://tileset/house_tile_set.tres
+res://scenes/houses/door.tscn

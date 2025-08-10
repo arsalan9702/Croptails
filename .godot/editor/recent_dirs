@@ -1,5 +1,6 @@
-res://tileset
 res://scenes/houses
+res://assets/game/tilesets
+res://tileset
 res://assets/game/characters
 res://scenes/characters/player
 res://scenes/test
