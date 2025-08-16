@@ -12,3 +12,9 @@ res://scenes/objects/trees/large_tree.tscn
 res://scenes/objects/trees/tree_shake.gdshader
 res://scenes/objects/trees/small_tree.gd
 res://scenes/objects/trees/large_tree.gd
+res://scenes/test/test_scene_object_rock.tscn
+res://scenes/objects/rocks/rock.tscn
+res://scenes/objects/rocks/rock.gd
+res://scenes/objects/rocks/stone.tscn
+res://scenes/objects/trees/shake.gdshader
+res://scenes/objects/shake.gdshader
