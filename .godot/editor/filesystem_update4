@@ -9,3 +9,6 @@ res://scenes/components/damage_component.tscn
 res://scenes/objects/trees/log.tscn
 res://scenes/components/collectible_component.tscn
 res://scenes/objects/trees/large_tree.tscn
+res://scenes/objects/trees/tree_shake.gdshader
+res://scenes/objects/trees/small_tree.gd
+res://scenes/objects/trees/large_tree.gd

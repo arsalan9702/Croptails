@@ -22,6 +22,5 @@ tile_set = ExtResource("1_5vbyg")
 
 [node name="Player" parent="." instance=ExtResource("2_x2g6n")]
 position = Vector2(315, 218)
-current_tool = 1
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
