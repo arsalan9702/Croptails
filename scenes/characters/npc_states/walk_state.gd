@@ -21,7 +21,9 @@ func character_setup() -> void:
 	set_movement_target()
 	
 func set_movement_target() -> void:
+	await get_tree().create_timer(randf_range(0.0, 0.5)).timeout
 	var target_position: Vector2 = NavigationServer2D.map_get_random_point(navigation_agent_2d.get_navigation_map(), navigation_agent_2d.navigation_layers, false)
+	target_position += Vector2(randf_range(-20, 20), randf_range(-20, 20))
 	navigation_agent_2d.target_position = target_position
 	speed = randf_range(min_speed, max_speed)
 
