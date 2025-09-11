@@ -1,3 +1,5 @@
+CollisionShape2D
+Sprite2D
 MarginContainer
 CanvasLayer
 Button
@@ -7,8 +9,6 @@ NavigationRegion2D
 Node2D
 NavigationAgent2D
 Node
-CollisionShape2D
 AnimatedSprite2D
 CharacterBody2D
 TileMapLayer
-Sprite2D
