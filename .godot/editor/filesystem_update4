@@ -10,3 +10,13 @@ res://scenes/ui/day_and_night_panel.gd
 res://scripts/globals/day_and_night_cycle_manager.gd
 res://scenes/components/day_night_cycle_component.tscn
 res://scenes/components/day_night_cycle_component.gd
+res://scenes/objects/plants/corn.tscn
+res://scenes/test/test_scene_crops.tscn
+res://scenes/objects/plants/growth_cycle_component.tscn
+res://scripts/globals/data_types.gd
+res://scenes/objects/plants/growth_cycle_component.gd
+res://scenes/objects/plants/corn.gd
+res://scenes/characters/player/player.tscn
+res://scenes/characters/player/watering_state.gd
+res://scenes/objects/plants/tomato.gd
+res://scenes/objects/plants/tomato.tscn

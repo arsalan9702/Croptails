@@ -6,8 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://butqcxhqrcwtb" path="res://scenes/objects/rocks/stone.tscn" id="4_n4arg"]
 [ext_resource type="PackedScene" uid="uid://cm00vkgh4b7a5" path="res://scenes/objects/trees/log.tscn" id="5_dhkbw"]
 [ext_resource type="PackedScene" uid="uid://c2vt12eeg2ow6" path="res://scenes/objects/milk.tscn" id="6_iljkb"]
-[ext_resource type="PackedScene" uid="uid://cng77n0porlqu" path="res://scenes/objects/plants/corn.tscn" id="7_nvruu"]
-[ext_resource type="PackedScene" uid="uid://cudvvhypftj11" path="res://scenes/objects/plants/tomato.tscn" id="8_4smmc"]
+[ext_resource type="PackedScene" uid="uid://cng77n0porlqu" path="res://scenes/objects/plants/corn_harvest.tscn" id="7_nvruu"]
+[ext_resource type="PackedScene" uid="uid://cudvvhypftj11" path="res://scenes/objects/plants/tomato_harvest.tscn" id="8_4smmc"]
 [ext_resource type="PackedScene" uid="uid://llf73lg55xla" path="res://scenes/ui/game_screen.tscn" id="9_gttdp"]
 
 [node name="TestSceneInventoryManagement" type="Node2D"]

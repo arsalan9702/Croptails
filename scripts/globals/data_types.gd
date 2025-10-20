@@ -1,10 +1,19 @@
 class_name DataTypes
 
-enum Tools{
+enum Tools {
 	None,
 	AxeWood,
 	TillGround,
 	WaterCrops,
 	PlantCorn,
-	PlantTomato	
+	PlantTomato
+}
+
+enum GrowthStates {
+	Seed,
+	Germination,
+	Vegetative,
+	Reproduction,
+	Maturity,
+	Harvesting
 }

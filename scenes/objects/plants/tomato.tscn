@@ -1,20 +1,35 @@
-[gd_scene load_steps=4 format=3 uid="uid://cudvvhypftj11"]
+[gd_scene load_steps=8 format=3 uid="uid://dpjw7bd5rgjdj"]
 
-[ext_resource type="Texture2D" uid="uid://dej1x8030b8gy" path="res://assets/game/objects/basic_plants.png" id="1_mts3v"]
-[ext_resource type="PackedScene" uid="uid://km58enx7lhly" path="res://scenes/components/collectible_component.tscn" id="2_po2op"]
+[ext_resource type="Script" uid="uid://dvr1aqtggrd2j" path="res://scenes/objects/plants/tomato.gd" id="1_i4hd5"]
+[ext_resource type="Texture2D" uid="uid://dej1x8030b8gy" path="res://assets/game/objects/basic_plants.png" id="2_huvgt"]
+[ext_resource type="PackedScene" uid="uid://drq86leathtfk" path="res://scenes/objects/plants/watering_particles.tscn" id="3_83wcf"]
+[ext_resource type="PackedScene" uid="uid://xdx6slj8l1a5" path="res://scenes/objects/plants/flowering_particles.tscn" id="4_wpajg"]
+[ext_resource type="PackedScene" uid="uid://ddybqrek3ikyf" path="res://scenes/objects/plants/growth_cycle_component.tscn" id="5_aborc"]
+[ext_resource type="PackedScene" uid="uid://cujkdbswhvmww" path="res://scenes/components/hurt_component.tscn" id="6_8gvmx"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_axu4e"]
-radius = 6.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wu140"]
+size = Vector2(12.75, 7)
 
-[node name="Tomato" type="Sprite2D"]
-texture = ExtResource("1_mts3v")
+[node name="Tomato" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_i4hd5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -6)
+texture = ExtResource("2_huvgt")
 hframes = 6
 vframes = 2
-frame = 11
+frame = 7
 
-[node name="CollectibleComponent" parent="." instance=ExtResource("2_po2op")]
-collectible_name = "tomato"
+[node name="WateringParticles" parent="." instance=ExtResource("3_83wcf")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectibleComponent"]
-y_sort_enabled = true
-shape = SubResource("CircleShape2D_axu4e")
+[node name="FloweringParticles" parent="." instance=ExtResource("4_wpajg")]
+
+[node name="GrowthCycleComponent" parent="." instance=ExtResource("5_aborc")]
+
+[node name="HurtComponent" parent="." instance=ExtResource("6_8gvmx")]
+tool = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_wu140")
