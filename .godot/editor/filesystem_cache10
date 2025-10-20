@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1760796337
+::res://::1760886681
 icon.svg::CompressedTexture2D/CompressedTexture2D::7657514029897064177::1754759395::1754759415::1::::<><><>0<>0<>c72f225869ee01238e8200745411c5cc<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1755675247
 ::res://assets/game/::1754760474
@@ -39,8 +39,8 @@ wooden_house_walls_tilset.png::CompressedTexture2D/CompressedTexture2D::60016862
 basic_ui_sprites.png::CompressedTexture2D/CompressedTexture2D::5181784137139800966::1755675395::1755675613::1::::<><><>0<>0<>3b3e8ad89ef746bd5c4595a6db0db7aa<>res://.godot/imported/basic_ui_sprites.png-f1365ff47f1f008f610f3c558cf47256.ctex::
 emotes.png::CompressedTexture2D/CompressedTexture2D::6991985237143150960::1755675583::1755675619::1::::<><><>0<>0<>4a85a88a8e8ccb9072babe333a7db795<>res://.godot/imported/emotes.png-353d1f16fc182ce390b19fd75334d9a9.ctex::
 mouse_icon.png::CompressedTexture2D/CompressedTexture2D::1456039612218086126::1755675551::1755675627::1::::<><><>0<>0<>97fe2b7652250f8903fc11b452210975<>res://.godot/imported/mouse_icon.png-67f27c0f39c79c6579b122cae0d75b42.ctex::
-::res://assets/ui/fonts/::1760800639
-pixelFont-7-8x14-sproutLands.ttf::FontFile::2168664157539174272::1760800639::1760800640::1::::<><><>0<>0<>fb9ee519512acdd16737ef95ac08b895<>res://.godot/imported/pixelFont-7-8x14-sproutLands.ttf-a5d3d0ebc981e7e7b1f52d18d670c7cc.fontdata::
+::res://assets/ui/fonts/::1760800640
+pixelFont-7-8x14-sproutLands.ttf::FontFile/FontFile::2168664157539174272::1760800639::1760800640::1::::<><><>0<>0<>fb9ee519512acdd16737ef95ac08b895<>res://.godot/imported/pixelFont-7-8x14-sproutLands.ttf-a5d3d0ebc981e7e7b1f52d18d670c7cc.fontdata::
 zx_palm.ttf::FontFile/FontFile::6361590959611930887::1757577095::1757577132::1::::<><><>0<>0<>bc7acc2c94b4540a9510a4a9887967a4<>res://.godot/imported/zx_palm.ttf-67c1ec1292f3f2797464a46a4709de07.fontdata::
 zx_palm_variation.tres::FontVariation::1082158508983503455::1760795812::0::1::::<><><>0<>0<><>::uid://cwvuqds6if784::::res://assets/ui/fonts/zx_palm.ttf
 ::res://scenes/::1755675204
@@ -80,10 +80,10 @@ door.tscn::PackedScene/PackedScene::7154115985875863037::1754932257::0::1::::<><
 large_house.tscn::PackedScene/PackedScene::8563949157136385263::1754932257::0::1::::<><><>0<>0<><>::uid://dg8do5ajun75i::::res://tileset/house_tile_set.tres
 medium_house.tscn::PackedScene/PackedScene::4252484254698904005::1754932599::0::1::::<><><>0<>0<><>::uid://dg8do5ajun75i::::res://tileset/house_tile_set.tres
 small_house.tscn::PackedScene/PackedScene::5795177060202816745::1755267534::0::1::::<><><>0<>0<><>::uid://dg8do5ajun75i::::res://tileset/house_tile_set.tres
-::res://scenes/objects/::1760800109
+::res://scenes/objects/::1760802398
 egg.tscn::PackedScene::8640773034978296354::1760796728::0::1::::<><><>0<>0<><>::uid://cv0kla174qbd2::::res://assets/game/objects/egg_item.png<>uid://km58enx7lhly::::res://scenes/components/collectible_component.tscn
 milk.tscn::PackedScene::6712493556452931323::1760796728::0::1::::<><><>0<>0<><>::uid://cnmh6v2fk2ilt::::res://assets/game/objects/simple_milk_and_grass_item.png<>uid://km58enx7lhly::::res://scenes/components/collectible_component.tscn
-shake.gdshader::Shader::7446912259978522017::1760800109::0::1::::<><><>0<>0<><>::
+shake.gdshader::Shader::7446912259978522017::1760802398::0::1::::<><><>0<>0<><>::
 ::res://scenes/objects/plants/::1760796728
 corn.tscn::PackedScene::5699683412503049064::1760796728::0::1::::<><><>0<>0<><>::uid://dej1x8030b8gy::::res://assets/game/objects/basic_plants.png<>uid://km58enx7lhly::::res://scenes/components/collectible_component.tscn
 tomato.tscn::PackedScene::6184124337356855802::1760796728::0::1::::<><><>0<>0<><>::uid://dej1x8030b8gy::::res://assets/game/objects/basic_plants.png<>uid://km58enx7lhly::::res://scenes/components/collectible_component.tscn
@@ -111,12 +111,12 @@ test_scene_object_tree.tscn::PackedScene/PackedScene::604687836697653763::175533
 test_scene_player.tscn::PackedScene/PackedScene::8711756103513308115::1754839188::0::1::::<><><>0<>0<><>::uid://7s2rtr81gvjp::::res://tileset/game_tile_set.tres<>uid://cyp76jp3vijan::::res://scenes/characters/player/player.tscn
 test_scene_tilemap.tscn::PackedScene/PackedScene::7447677079310702187::1754812280::0::1::::<><><>0<>0<><>::uid://7s2rtr81gvjp::::res://tileset/game_tile_set.tres
 test_scene_tilemap_layer_y_sort.tscn::PackedScene/PackedScene::207366728081539930::1755595289::0::1::::<><><>0<>0<><>::uid://7s2rtr81gvjp::::res://tileset/game_tile_set.tres<>uid://cyp76jp3vijan::::res://scenes/characters/player/player.tscn
-::res://scenes/ui/::1760800109
+::res://scenes/ui/::1760802392
+day_and_night_panel.tscn::PackedScene::363234917881489272::1760802392::0::1::::<><><>0<>0<><>::uid://covmjnwte8itt::::res://scenes/ui/game_ui_theme.tres<>uid://cf3dh0gmmhlog::::res://assets/ui/basic_ui_sprites.png
 game_screen.tscn::PackedScene::795147653642364066::1760797771::0::1::::<><><>0<>0<><>::uid://covmjnwte8itt::::res://scenes/ui/game_ui_theme.tres<>uid://g8ku6jfp8q64::::res://scenes/ui/tools_panel.tscn<>uid://cqew7xgrhr4v1::::res://scenes/ui/inventory_panel.tscn
-game_ui_theme.tres::Theme::5799582504871426785::1760795812::0::1::::<><><>0<>0<><>::uid://cf3dh0gmmhlog::::res://assets/ui/basic_ui_sprites.png<>uid://pog80mx0wwsd::::res://assets/ui/fonts/zx_palm_variation.tres
-inventory_panel.tscn::PackedScene::5905514513945117040::1760797771::0::1::::<><><>0<>0<><>::uid://covmjnwte8itt::::res://scenes/ui/game_ui_theme.tres<>uid://u24rvfau4ay::::res://scenes/ui/inventory_panel.gd<>uid://d0hfcjq50xtj0::::res://assets/game/objects/basic_tools_and_meterials.png<>uid://dej1x8030b8gy::::res://assets/game/objects/basic_plants.png<>uid://cv0kla174qbd2::::res://assets/game/objects/egg_item.png<>uid://cnmh6v2fk2ilt::::res://assets/game/objects/simple_milk_and_grass_item.png
+game_ui_theme.tres::Theme::5799582504871426785::1760802143::0::1::::<><><>0<>0<><>::uid://cf3dh0gmmhlog::::res://assets/ui/basic_ui_sprites.png<>uid://pog80mx0wwsd::::res://assets/ui/fonts/zx_palm_variation.tres<>uid://55rt1ug4p8oy::::res://assets/ui/fonts/pixelFont-7-8x14-sproutLands.ttf
 inventory_panel.gd::GDScript::42979627474973964::1760797770::0::1::::<>PanelContainer<><>0<>0<><>::
-day_and_night_panel.tscn::PackedScene::363234917881489272::1760800109::0::1::::<><><>0<>0<><>::
+inventory_panel.tscn::PackedScene::5905514513945117040::1760797771::0::1::::<><><>0<>0<><>::uid://covmjnwte8itt::::res://scenes/ui/game_ui_theme.tres<>uid://u24rvfau4ay::::res://scenes/ui/inventory_panel.gd<>uid://d0hfcjq50xtj0::::res://assets/game/objects/basic_tools_and_meterials.png<>uid://dej1x8030b8gy::::res://assets/game/objects/basic_plants.png<>uid://cv0kla174qbd2::::res://assets/game/objects/egg_item.png<>uid://cnmh6v2fk2ilt::::res://assets/game/objects/simple_milk_and_grass_item.png
 tools_panel.gd::GDScript/GDScript::7627675183677340396::1755680089::0::1::::<>PanelContainer<><>0<>0<><>::
 tools_panel.tscn::PackedScene/PackedScene::489902055893562451::1755680165::0::1::::<><><>0<>0<><>::uid://covmjnwte8itt::::res://scenes/ui/game_ui_theme.tres<>uid://dgw5xwn86tqca::::res://scenes/ui/tools_panel.gd
 ::res://scripts/::1754832253
