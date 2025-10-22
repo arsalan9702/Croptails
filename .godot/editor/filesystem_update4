@@ -4,11 +4,7 @@ res://tileset/house_tile_set.tres
 res://tileset/game_tile_set.tres
 res://assets/ui/fonts/zx_palm_variation.tres
 res://scenes/ui/game_ui_theme.tres
-res://scenes/test/test_scene_crops.tscn
-res://scenes/objects/plants/growth_cycle_component.tscn
-res://scenes/characters/player/player.tscn
 res://scenes/objects/plants/tomato.tscn
-res://scenes/test/test_scene_tilemap.tscn
 res://scenes/test/test_scene_crop_field_tilled_dirt.tscn
+res://scenes/components/test_scene_save_data_manager_component.tscn
 res://scenes/components/field_cursor_component.gd
-res://scenes/components/crops_cursor_component.gd
