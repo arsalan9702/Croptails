@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://be0qiqni4ytjm"]
+[gd_scene load_steps=11 format=4 uid="uid://be0qiqni4ytjm"]
 
 [ext_resource type="TileSet" uid="uid://7s2rtr81gvjp" path="res://tileset/game_tile_set.tres" id="1_ksju7"]
 [ext_resource type="PackedScene" uid="uid://cothyp0b3srhh" path="res://scenes/houses/small_house.tscn" id="2_x42e6"]
@@ -6,20 +6,18 @@
 [ext_resource type="PackedScene" uid="uid://b1t62akjqhlnh" path="res://scenes/houses/medium_house.tscn" id="4_sk5k4"]
 [ext_resource type="PackedScene" uid="uid://bpj46n03emoei" path="res://scenes/characters/chicken/chicken.tscn" id="5_6761a"]
 [ext_resource type="PackedScene" uid="uid://dclky8pu8a10u" path="res://scenes/components/field_cursor_component.tscn" id="5_qxy0u"]
-[ext_resource type="Script" uid="uid://5vdb3cm028b1" path="res://scenes/components/field_cursor_component.gd" id="6_excbq"]
 [ext_resource type="PackedScene" uid="uid://bh0oy2ny6o41f" path="res://scenes/characters/cow/cow.tscn" id="6_sk5k4"]
 [ext_resource type="PackedScene" uid="uid://ckbtdo6c4yxhn" path="res://scenes/components/crops_cursor_component.tscn" id="7_iav0o"]
-[ext_resource type="Script" uid="uid://cjlonc2p8lw0m" path="res://scenes/components/crops_cursor_component.gd" id="8_dnkej"]
-
-[sub_resource type="NavigationPolygon" id="NavigationPolygon_sk5k4"]
-vertices = PackedVector2Array(975.102, 134.711, 1193.63, 128.313, 1191.35, 193.789, 1097.46, 191.844, 976.891, 297.117, 1084.74, 237.258, 1194.51, 299.859, 1191.46, 235.18)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 0, 3, 5), PackedInt32Array(6, 4, 5, 7)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(965, 125, 1204, 118, 1201, 204, 1105, 202, 1098, 227, 1201, 225, 1205, 310, 967, 307)])
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_oc4kc"]
 vertices = PackedVector2Array(592, 107.258, 592, 214.602, 438.242, 208.609, 337, 113.75, 337, 249.242, 437.227, 251.742)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 3, 2, 5)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(327, 104, 602, 97, 602, 225, 448, 219, 447, 262, 327, 259)])
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_s8va5"]
+vertices = PackedVector2Array(502.813, 135.273, 500.18, 270.07, 395.461, 270.922, 387.602, 126.797)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(377, 116, 513, 126, 510, 280, 386, 281)])
 
 [node name="Level1" type="Node2D"]
 
@@ -62,77 +60,12 @@ position = Vector2(723, 122)
 position = Vector2(696, 375)
 
 [node name="FieldCursorComponent" parent="." node_paths=PackedStringArray("grass_tilemap_layer", "tilled_soil_tilemap_layer") instance=ExtResource("5_qxy0u")]
-script = ExtResource("6_excbq")
 grass_tilemap_layer = NodePath("../GameTileMap/Grass")
 tilled_soil_tilemap_layer = NodePath("../GameTileMap/TilledSoil")
 
-[node name="CropsCursorComponent" parent="." node_paths=PackedStringArray("tilled_soil_tilemap_layer") instance=ExtResource("7_iav0o")]
-script = ExtResource("8_dnkej")
+[node name="CropsCursorComponent" parent="." node_paths=PackedStringArray("tilled_soil_tilemap_layer", "crop_fields") instance=ExtResource("7_iav0o")]
 tilled_soil_tilemap_layer = NodePath("../GameTileMap/TilledSoil")
-
-[node name="Chickens" type="Node2D" parent="."]
-
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Chickens"]
-navigation_polygon = SubResource("NavigationPolygon_sk5k4")
-
-[node name="Chicken" parent="Chickens" instance=ExtResource("5_6761a")]
-position = Vector2(-51, 412)
-
-[node name="Chicken2" parent="Chickens" instance=ExtResource("5_6761a")]
-position = Vector2(-12, 471)
-
-[node name="Chicken3" parent="Chickens" instance=ExtResource("5_6761a")]
-position = Vector2(21, 459)
-
-[node name="Chicken4" parent="Chickens" instance=ExtResource("5_6761a")]
-position = Vector2(6, 415)
-
-[node name="Chicken5" parent="Chickens" instance=ExtResource("5_6761a")]
-position = Vector2(21, 459)
-
-[node name="Chicken6" parent="Chickens" instance=ExtResource("5_6761a")]
-position = Vector2(6, 415)
-
-[node name="Chickens2" type="Node2D" parent="."]
-
-[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Chickens2"]
-navigation_polygon = SubResource("NavigationPolygon_sk5k4")
-
-[node name="Chicken" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(996, 172)
-
-[node name="Chicken2" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1035, 231)
-
-[node name="Chicken3" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1068, 219)
-
-[node name="Chicken4" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1053, 175)
-
-[node name="Chicken5" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1068, 219)
-
-[node name="Chicken6" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1053, 175)
-
-[node name="Chicken7" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(996, 172)
-
-[node name="Chicken8" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1035, 231)
-
-[node name="Chicken9" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1068, 219)
-
-[node name="Chicken10" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1053, 175)
-
-[node name="Chicken11" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1068, 219)
-
-[node name="Chicken12" parent="Chickens2" instance=ExtResource("5_6761a")]
-position = Vector2(1053, 175)
+crop_fields = NodePath("../GameTileMap/TilledSoil")
 
 [node name="Cows" type="Node2D" parent="."]
 
@@ -157,3 +90,39 @@ position = Vector2(400, 190)
 
 [node name="Cow6" parent="Cows" instance=ExtResource("6_sk5k4")]
 position = Vector2(505, 156)
+
+[node name="Chickens" type="Node2D" parent="."]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Chickens"]
+position = Vector2(-443, 253)
+navigation_polygon = SubResource("NavigationPolygon_s8va5")
+
+[node name="Chicken" parent="Chickens" instance=ExtResource("5_6761a")]
+position = Vector2(-46, 447)
+
+[node name="Chicken2" parent="Chickens" instance=ExtResource("5_6761a")]
+position = Vector2(63, 479)
+
+[node name="Chicken3" parent="Chickens" instance=ExtResource("5_6761a")]
+position = Vector2(26, 494)
+
+[node name="Chicken4" parent="Chickens" instance=ExtResource("5_6761a")]
+position = Vector2(11, 450)
+
+[node name="Chickens2" type="Node2D" parent="."]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="Chickens2"]
+position = Vector2(586, 3)
+navigation_polygon = SubResource("NavigationPolygon_s8va5")
+
+[node name="Chicken" parent="Chickens2" instance=ExtResource("5_6761a")]
+position = Vector2(988, 205)
+
+[node name="Chicken2" parent="Chickens2" instance=ExtResource("5_6761a")]
+position = Vector2(1097, 237)
+
+[node name="Chicken3" parent="Chickens2" instance=ExtResource("5_6761a")]
+position = Vector2(1060, 252)
+
+[node name="Chicken4" parent="Chickens2" instance=ExtResource("5_6761a")]
+position = Vector2(1045, 208)

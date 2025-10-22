@@ -2,6 +2,7 @@ class_name CropsCursorComponent
 extends Node
 
 @export var tilled_soil_tilemap_layer: TileMapLayer
+@export var crop_fields: TileMapLayer  # Add this export
 
 var player: Player
 
@@ -41,17 +42,16 @@ func add_crop() -> void:
 		if ToolManager.selected_tool == DataTypes.Tools.PlantCorn:
 			var corn_instance = corn_plant_scene.instantiate() as Node2D
 			corn_instance.global_position = local_cell_position
-			get_parent().find_child("CropFields").add_child(corn_instance)
+			crop_fields.add_child(corn_instance)  # Use the exported reference
 	
 		if ToolManager.selected_tool == DataTypes.Tools.PlantTomato:
 			var tomato_instance = tomato_plant_scene.instantiate() as Node2D
 			tomato_instance.global_position = local_cell_position
-			get_parent().find_child("CropFields").add_child(tomato_instance)
-
+			crop_fields.add_child(tomato_instance) 
 
 func remove_crop() -> void:
 	if distance < 20.0:
-		var crop_nodes = get_parent().find_child("CropFields").get_children()
+		var crop_nodes = crop_fields.get_children()  # Use the exported reference
 		
 		for node: Node2D in crop_nodes:
 			if node.global_position == local_cell_position:

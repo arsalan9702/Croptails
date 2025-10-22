@@ -1,5 +1,7 @@
 res://scenes/components
 res://scripts/globals
+res://resources
+res://scenes
 res://scenes/objects/plants
 res://scenes/ui
 res://assets/ui/fonts

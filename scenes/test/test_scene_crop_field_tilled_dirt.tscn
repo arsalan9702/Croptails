@@ -1,15 +1,22 @@
-[gd_scene load_steps=9 format=4 uid="uid://cfvq55d10yekl"]
+[gd_scene load_steps=11 format=4 uid="uid://cfvq55d10yekl"]
 
+[ext_resource type="PackedScene" uid="uid://b2fiq7jp7ob7b" path="res://scenes/components/test_scene_save_data_manager_component.tscn" id="1_qof8n"]
 [ext_resource type="PackedScene" uid="uid://nkos6bopbkag" path="res://scenes/components/day_night_cycle_component.tscn" id="1_x5lsa"]
 [ext_resource type="TileSet" uid="uid://7s2rtr81gvjp" path="res://tileset/game_tile_set.tres" id="2_d6rsv"]
+[ext_resource type="PackedScene" uid="uid://bee8tgmtgdjod" path="res://scenes/components/save_level_data_component.tscn" id="2_tllek"]
 [ext_resource type="PackedScene" uid="uid://cyp76jp3vijan" path="res://scenes/characters/player/player.tscn" id="3_gbxm5"]
+[ext_resource type="Script" uid="uid://ga1p34h7kc6y" path="res://scenes/components/save_level_data_component.gd" id="3_in3v2"]
 [ext_resource type="PackedScene" uid="uid://dclky8pu8a10u" path="res://scenes/components/field_cursor_component.tscn" id="3_x5lsa"]
-[ext_resource type="Script" uid="uid://5vdb3cm028b1" path="res://scenes/components/field_cursor_component.gd" id="4_d6rsv"]
 [ext_resource type="PackedScene" uid="uid://llf73lg55xla" path="res://scenes/ui/game_screen.tscn" id="4_qof8n"]
 [ext_resource type="PackedScene" uid="uid://ckbtdo6c4yxhn" path="res://scenes/components/crops_cursor_component.tscn" id="5_gbxm5"]
-[ext_resource type="Script" uid="uid://cjlonc2p8lw0m" path="res://scenes/components/crops_cursor_component.gd" id="6_qof8n"]
+[ext_resource type="PackedScene" uid="uid://veqbyhdjra6k" path="res://scenes/objects/plants/corn.tscn" id="10_tllek"]
 
 [node name="TestSceneCropFieldTilledDirt" type="Node2D"]
+
+[node name="TestSceneSaveDataManagerComponent" parent="." instance=ExtResource("1_qof8n")]
+
+[node name="SaveLevelDataComponent" parent="." instance=ExtResource("2_tllek")]
+script = ExtResource("3_in3v2")
 
 [node name="DayNightCycleComponent" parent="." instance=ExtResource("1_x5lsa")]
 visible = false
@@ -30,15 +37,17 @@ tile_set = ExtResource("2_d6rsv")
 [node name="CropFields" type="Node2D" parent="."]
 
 [node name="FieldCursorComponent" parent="." node_paths=PackedStringArray("grass_tilemap_layer", "tilled_soil_tilemap_layer") instance=ExtResource("3_x5lsa")]
-script = ExtResource("4_d6rsv")
 grass_tilemap_layer = NodePath("../GameTileMap/Grass")
 tilled_soil_tilemap_layer = NodePath("../GameTileMap/TilledSoil")
 
-[node name="CropsCursorComponent" parent="." node_paths=PackedStringArray("tilled_soil_tilemap_layer") instance=ExtResource("5_gbxm5")]
-script = ExtResource("6_qof8n")
+[node name="CropsCursorComponent" parent="." node_paths=PackedStringArray("tilled_soil_tilemap_layer", "crop_fields") instance=ExtResource("5_gbxm5")]
 tilled_soil_tilemap_layer = NodePath("../GameTileMap/TilledSoil")
+crop_fields = NodePath("../GameTileMap/TilledSoil")
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("3_gbxm5")]
 position = Vector2(317, 195)
 
 [node name="GameScreen" parent="." instance=ExtResource("4_qof8n")]
+
+[node name="Corn" parent="." instance=ExtResource("10_tllek")]
+position = Vector2(312, 125)
