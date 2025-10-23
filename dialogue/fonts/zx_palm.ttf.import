@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://55rt1ug4p8oy"
-path="res://.godot/imported/pixelFont-7-8x14-sproutLands.ttf-a5d3d0ebc981e7e7b1f52d18d670c7cc.fontdata"
+uid="uid://cwvuqds6if784"
+path="res://.godot/imported/zx_palm.ttf-c5d9cc08012757dc84d29dc28c325bae.fontdata"
 
 [deps]
 
-source_file="res://assets/ui/fonts/pixelFont-7-8x14-sproutLands.ttf"
-dest_files=["res://.godot/imported/pixelFont-7-8x14-sproutLands.ttf-a5d3d0ebc981e7e7b1f52d18d670c7cc.fontdata"]
+source_file="res://dialogue/fonts/zx_palm.ttf"
+dest_files=["res://.godot/imported/zx_palm.ttf-c5d9cc08012757dc84d29dc28c325bae.fontdata"]
 
 [params]
 
