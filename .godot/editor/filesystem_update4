@@ -68,3 +68,5 @@ res://scenes/ui/game_menu_screen_background.gd
 res://scenes/ui/game_menu_screen.gd
 res://scripts/globals/game_manager.gd
 res://scripts/globals/scene_manager.gd
+res://scenes/components/mouse_cursor_component.tscn
+res://scenes/components/mouse_cursor_component.gd

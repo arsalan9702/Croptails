@@ -1,8 +1,8 @@
 [gd_resource type="Theme" load_steps=53 format=3 uid="uid://covmjnwte8itt"]
 
 [ext_resource type="Texture2D" uid="uid://cf3dh0gmmhlog" path="res://assets/ui/basic_ui_sprites.png" id="1_nhbk8"]
-[ext_resource type="FontVariation" uid="uid://pog80mx0wwsd" path="res://dialogue/fonts/zx_palm_variation.tres" id="2_68i34"]
 [ext_resource type="FontFile" uid="uid://55rt1ug4p8oy" path="res://dialogue/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_mtjyl"]
+[ext_resource type="FontVariation" uid="uid://pog80mx0wwsd" path="res://dialogue/fonts/zx_palm_variation.tres" id="3_cqa1q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_68i34"]
 atlas = ExtResource("1_nhbk8")
@@ -259,6 +259,7 @@ DayAndNightLabel/base_type = &"Label"
 DayAndNightLabel/font_sizes/font_size = 18
 DayAndNightLabel/fonts/font = ExtResource("2_mtjyl")
 GameMenuButton/base_type = &"Button"
+GameMenuButton/colors/font_disabled_color = Color(0.201527, 0.201527, 0.201527, 1)
 GameMenuButton/font_sizes/font_size = 18
 GameMenuButton/fonts/font = ExtResource("2_mtjyl")
 GameMenuButton/styles/disabled = SubResource("StyleBoxTexture_mtujg")
@@ -270,7 +271,7 @@ InventoryItemPanel/base_type = &"PanelContainer"
 InventoryItemPanel/styles/panel = SubResource("StyleBoxTexture_kwis4")
 InventoryLabel/base_type = &"Label"
 InventoryLabel/font_sizes/font_size = 8
-InventoryLabel/fonts/font = ExtResource("2_68i34")
+InventoryLabel/fonts/font = ExtResource("3_cqa1q")
 Label/fonts/font = ExtResource("2_mtjyl")
 MarginContainer/constants/margin_bottom = 10
 MarginContainer/constants/margin_left = 10
