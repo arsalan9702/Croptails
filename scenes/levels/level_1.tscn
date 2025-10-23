@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=4 uid="uid://be0qiqni4ytjm"]
+[gd_scene load_steps=15 format=4 uid="uid://be0qiqni4ytjm"]
 
 [ext_resource type="PackedScene" uid="uid://bee8tgmtgdjod" path="res://scenes/components/save_level_data_component.tscn" id="1_excbq"]
 [ext_resource type="TileSet" uid="uid://7s2rtr81gvjp" path="res://tileset/game_tile_set.tres" id="1_ksju7"]
+[ext_resource type="Script" uid="uid://ga1p34h7kc6y" path="res://scenes/components/save_level_data_component.gd" id="2_iav0o"]
 [ext_resource type="PackedScene" uid="uid://cothyp0b3srhh" path="res://scenes/houses/small_house.tscn" id="2_x42e6"]
 [ext_resource type="PackedScene" uid="uid://duao8ycmcxyqx" path="res://scenes/houses/large_house.tscn" id="3_6761a"]
 [ext_resource type="PackedScene" uid="uid://1gs0k3ava3ok" path="res://scenes/components/save_data_component.tscn" id="3_iav0o"]
@@ -25,6 +26,7 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(377, 116, 513, 126, 510
 [node name="Level1" type="Node2D"]
 
 [node name="SaveLevelDataComponent" parent="." instance=ExtResource("1_excbq")]
+script = ExtResource("2_iav0o")
 
 [node name="GameTileMap" type="Node2D" parent="."]
 y_sort_enabled = true

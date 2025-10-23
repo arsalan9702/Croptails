@@ -70,3 +70,4 @@ res://scripts/globals/game_manager.gd
 res://scripts/globals/scene_manager.gd
 res://scenes/components/mouse_cursor_component.tscn
 res://scenes/components/mouse_cursor_component.gd
+res://scenes/components/save_level_data_component.tscn
